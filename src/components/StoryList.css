@@ -1,0 +1,54 @@
+/* Style for the StoryList container */
+.story-list-container {
+    background-color: #404040; /* Background color for the story list container */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center-align the story list horizontally */
+  }
+  
+  /* Style for the title */
+  .story-list-title {
+    font-size: 1.5rem; /* Adjust the title font size as needed */
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Style for each story item */
+  .story-item {
+    border: 1px solid #6d6d6d; /* Add a border around each story item */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(2, 2, 2);
+  }
+  
+  /* Style for the story text */
+  .story-text {
+    font-size: 1rem; /* Adjust the story text font size as needed */
+    line-height: 1.4; /* Adjust the line height for readability */
+    color: #6d6d6d; 
+}
+  
+  /* Style for the buttons */
+  .story-button {
+    background-color: #ff8031;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  /* Hover effect for the buttons */
+  .story-button:hover {
+    background-color: #f99c61;
+  }
+  

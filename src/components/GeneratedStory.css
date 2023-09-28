@@ -1,0 +1,30 @@
+/* Style for the GeneratedStory component */
+.generated-story {
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px; /* Add spacing from the above content */
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+/* Style for the title */
+.generated-story h3 {
+  font-size: 1.5rem; /* Adjust the title font size as needed */
+  margin-bottom: 10px;
+  text-align: center;
+   color: #ffffff;
+   background-color: rgb(47, 47, 46);
+   padding: 10px;
+}
+
+/* Style for the story text */
+.generated-story p {
+  font-size: 1rem; /* Adjust the story text font size as needed */
+  line-height: 1.4; /* Adjust the line height for readability */
+  text-align: center;
+  font-style: italic;
+  margin-top: 10px; /* Add some top margin for spacing */
+  color: #ffffff; /* Change the text color */
+}
+

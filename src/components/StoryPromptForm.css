@@ -1,0 +1,52 @@
+
+.story-prompt-container {
+  text-align: center;
+  background-color: #3e3e3e; /* Background color for the chat box */
+  box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center-align the chat box horizontally */
+}
+
+/* Style for the input field */
+.story-prompt-input {
+  padding: 10px;
+  border: 1px solid #141414;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #5e5e5ed9; /* Input field background color */
+  
+}
+
+/* Style for the submit button */
+.story-prompt-button {
+  background-color: #ff8031;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Hover effect for the submit button */
+.story-prompt-button:hover {
+  background-color: #f99c61;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .story-prompt-container {
+    max-width: 90%; /* Reduce the maximum width for smaller screens */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .story-prompt-button {
+    padding: 8px 16px; /* Adjust button padding for smaller screens */
+  }
+}
+
+  
