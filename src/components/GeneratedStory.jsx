@@ -11,5 +11,4 @@ function GeneratedStory({ story }) {
   );
 }
 
-
 export default GeneratedStory;

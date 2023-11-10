@@ -4,9 +4,9 @@ import "../components/Leaderboard.css";
 
 function Leaderboard({ stories }) {
   if (!Array.isArray(stories)) {
-    return null; // or some other fallback UI
+    return null; 
   }
-  // Sort stories by upvotes in descending order
+
   const sortedStories = [...stories].sort((a, b) => b.upvotes - a.upvotes);
 
   return (

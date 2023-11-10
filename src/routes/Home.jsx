@@ -10,10 +10,10 @@ function Home() {
   const [stories, setStories] = useState([ ]);
   const [generatedStory, setGeneratedStory] = useState('');
 
-  // Define the generateStory function before using it
+
   const generateStory = async (prompt) => {
     try {
-      const response = await axios.post('/api/generate-story', { prompt })
+      const response = await axios.post('http://localhost:5000/generate-story', { prompt });
       if (response.data.story) {
         setGeneratedStory(response.data.story);
         const newStory = { text: response.data.story, upvotes: 0 };
@@ -22,10 +22,6 @@ function Home() {
     } catch (error) {
       console.error('Error generating story:', error);
     }
-    // Implement story generation logic here, e.g., using an AI API.
-    // Once you have a generated story, add it to the stories array.
-    // const newStory = { text: 'Generated story text', upvotes: 0 };
-    // setStories([...stories, newStory]);
   };
 
   const upvoteStory = (index) => {
@@ -35,7 +31,6 @@ function Home() {
   };
 
   const saveStory = async (index) => {
-    // Implement story saving logic here.
     try{
       const storyToSave = stories[index];
       const response = await axios.post('/api/save-story', {story: storyToSave});
@@ -55,7 +50,6 @@ function Home() {
    const storyToShare = stories[index].text;
 
    if(navigator.share){
-    // Use Web Share API for sharing if available
     navigator.share({
       title: "Share Story",
       text: storyToShare,
